@@ -14,7 +14,7 @@ O projeto está organizado na seguinte estrutura de pastas:
 - 📁<a href="/images">[images] </a> : Imagens utilizadas na elaboração da aplicação.  
 - 📁<a href="/js">[js]</a> : Códigos javascript e bibliotecas javascript utilizadas na aplicação.  
 - 📁<a href="/views">[views]</a> : Códigos PHP e HTML com todos os arquivos que compõem as páginas da aplicação.  
-- 📁<a href="/conexao.php"> [conexao] </a> : Código PHP para realizar a conexão com o banco de dados da aplicação. 
+- 📁<a href="/conexao.php">[conexao]</a> : Código PHP para realizar a conexão com o banco de dados da aplicação. 
 
 ___
 ## 🖥️ Funcionalidades
