@@ -31,6 +31,7 @@ INSERT INTO Estados (nome, uf, ibge) VALUES
     ('Sergipe', 'SE', 28),
     ('São Paulo', 'SP', 35),
     ('Tocantins', 'TO', 17);
+    
 INSERT INTO Cidades (nome, estado, ibge) VALUES
     ('Afonso Cláudio', 8, 3200102),
     ('Água Doce do Norte', 8, 3200169),
