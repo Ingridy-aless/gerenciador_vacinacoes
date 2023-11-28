@@ -49,24 +49,23 @@ CREATE TABLE Vacinacao (
 /* 
 	As tabelas estados e cidades foram criadas e adaptadas conforme: 
 	https://github.com/chinnonsantos/sql-paises-estados-cidades/tree/master/MySQL
-	Não foram utilizadas foreign keys e id BIGINT, pois seguimos o padrão de inserção e criação da tabela 
-	fornecida pelo github anterior, para não gerar conflitos com os dados de inserção.
 */
 
 CREATE TABLE Estados (
-	id INT(11) NOT NULL PRIMARY KEY,
-	nome VARCHAR(75) DEFAULT NULL,
-	uf VARCHAR(2) DEFAULT NULL,
-	ibge INT(2) DEFAULT NULL,
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(75) NOT NULL,
+	uf VARCHAR(2) NOT NULL,
+	ibge INT(2) NOT NULL,
 	criado_em TIMESTAMP NOT NULL DEFAULT current_timestamp(),
 	atualizado_em TIMESTAMP NOT NULL DEFAULT current_timestamp() ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE Cidades (
-	id INT(11) NOT NULL PRIMARY KEY,
-	nome VARCHAR(120) DEFAULT NULL,
-	uf INT(2) DEFAULT NULL,
-	ibge INT(7) DEFAULT NULL,
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(120) NOT NULL,
+	estado BIGINT NOT NULL,
+	ibge INT(7) NOT NULL,
 	criado_em TIMESTAMP NOT NULL DEFAULT current_timestamp(),
-	atualizado_em TIMESTAMP NOT NULL DEFAULT current_timestamp() ON UPDATE CURRENT_TIMESTAMP
+	atualizado_em TIMESTAMP NOT NULL DEFAULT current_timestamp() ON UPDATE CURRENT_TIMESTAMP,
+	FOREIGN KEY(estado) REFERENCES Estados(id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;

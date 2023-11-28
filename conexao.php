@@ -2,7 +2,7 @@
     $host = 'localhost';
     $user = 'root';
     $pass = '';
-    $db = 'controlador_vacinacoes';
+    $db = 'gerenciador_vacinacoes';
 
     $conexao = new mysqli($host, $user, $pass, $db);
 
