@@ -34,6 +34,7 @@
                 <th> Laboratório </th>
                 <th> Lote </th>
                 <th> Validade </th>
+                <th> Ações </th>
             </tr>
         </thead>
         <tbody>

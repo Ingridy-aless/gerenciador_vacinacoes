@@ -37,6 +37,7 @@
                 <th> Nome do animal </th>
                 <th> Vacina </th>
                 <th> Data da aplicação </th>
+                <th> Ações </th>
             </tr>
         </thead>
         <tbody>

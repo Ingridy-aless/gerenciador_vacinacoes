@@ -42,6 +42,7 @@
                 <th> Estado </th>
                 <th> Cidade </th>
                 <th> CEP </th>
+                <th> Ações </th>
             </tr>
         </thead>
         <tbody>

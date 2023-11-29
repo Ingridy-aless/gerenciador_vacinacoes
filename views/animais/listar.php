@@ -39,6 +39,7 @@
                 <th> Raça </th>
                 <th> Sexo </th>
                 <th> Dono </th>
+                <th> Ações </th>
             </tr>
         </thead>
         <tbody>
